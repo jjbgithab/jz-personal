@@ -1,0 +1,85 @@
+
+/*INDEX PAGE CODE */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center;     /* Centers content vertically */
+  min-height: 100vh;       /* Ensures the body takes at least the full viewport height */
+  margin: 0;               /* Resets default body margins */
+  font-family: "EB Garamond", Garamond, "Times New Roman", serif;
+}
+
+.container{
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.bottom-centered {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.bottom-centered a{
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+
+}
+
+.bottom-centered a:hover {
+  opacity: 0.5;
+}
+
+.top-left {
+  position: absolute;
+  top: 30px;
+  left: 32px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.top-right {
+  position: absolute;
+  top:30px;
+  right: 32px;
+  text-align: right;
+}
+
+.top-right .org {
+  font-size:20px;
+  font-weight: 500;
+}
+
+.top-right .role {
+  font-size: 16px;
+  font-weight: 500;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* CONTACT PAGE CODE */
+
+.po {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  text-align: left;
+  font-size: 15px;
+}
+.info-about {
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+}

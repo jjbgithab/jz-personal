@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>zyh</title>
+</head>
+
+<body>
+    
+    
+   <div class="container">
+        <img src="images/card.jpg" height="400">
+
+        <div class="bottom-centered">
+            <a href="about.html" target=_self>
+                about     
+            </a>
+            <span>//</span>
+            <a href="projects.html" target=_self>
+                projects     
+            </a>
+            <span>//</span>
+            <a href="data/jz_resume.pdf" download>
+                résumé 
+            </a> 
+            <span>//</span>
+            <a href="contact.html" target=_self>
+                contact  
+            </a>
+        </div>
+
+        <div class="top-left">
+            TIME IN SYDNEY
+            <br>
+            <span id="time">  </span>
+            AEDT
+        </div>
+
+        <div class="top-right">
+             <span class="org">Student Engineer</span>
+             <br>
+             <span class="role">UNSW</span>
+        </div>
+
+        <div class="centered">
+            <h1>Jerry ZHANG</h1>
+        </div>
+   </div>
+
+</body> 
+
+</html>
+
+
+<script type="text/javascript">
+    // declare time zone formatting
+    let options = {
+        timeZone: 'Australia/Sydney',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+    },
+    formatter = new Intl.DateTimeFormat([], options);
+
+    // set time
+    setInterval(
+        () => {
+            document.querySelector("#time").innerText = formatter.format(new Date());
+        }
+    , 1000)
+</script>
