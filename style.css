@@ -97,3 +97,37 @@ body {
   .footer  { grid-area: 3 / span 6; }
 }
 
+/* ADAPTIVE */
+.card-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .top-left {
+    font-size: 11px;
+    top: 12px;
+    left: 12px;
+  }
+  .top-right {
+    top: 12px;
+    right: 12px;
+  }
+  .top-right .org {
+    font-size: 14px;
+  }
+  .top-right .role {
+    font-size: 11px;
+  }
+  .centered h1 {
+    font-size: 1.4rem;
+  }
+  .bottom-centered {
+    font-size: 13px;
+    bottom: 16px;
+  }
+}
+
+
