@@ -78,11 +78,14 @@ body {
   text-align: left;
   font-size: 15px;
 }
-.info-about {
-    max-width: 600px;
-    padding: 30px;
-    text-align: center;
 
+.info-about {
+  max-width: 600px;
+  padding: 30px;
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  line-height: 1.7;
+  margin: 0 auto;
 }
 
 @media (min-width: 600px) {
@@ -97,7 +100,7 @@ body {
   .footer  { grid-area: 3 / span 6; }
 }
 
-/* ADAPTIVE */
+/* ADAPTIVE WIDTH */
 .card-img {
   width: 100%;
   max-width: 600px;
@@ -130,4 +133,4 @@ body {
   }
 }
 
-
+/* ADAPTIVE WIDTH */
