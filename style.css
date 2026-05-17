@@ -79,6 +79,7 @@ body {
   font-size: 15px;
 }
 
+/* INDEX PAGE CODE */
 .info-about {
   max-width: 600px;
   padding: 30px;
@@ -89,8 +90,8 @@ body {
 }
 
 .unsw {
-  width: 120px;
-  height: 120px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
