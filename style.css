@@ -4,11 +4,14 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center;     /* Centers content vertically */
-  min-height: 100vh;       /* Ensures the body takes at least the full viewport height */
-  margin: 0;               /* Resets default body margins */
+  min-height: 100vh;
+  margin: 0;
   font-family: "EB Garamond", Garamond, "Times New Roman", serif;
+}
+
+.body-center {
+  justify-content: center;
+  align-items: center;
 }
 
 .container{
@@ -22,7 +25,6 @@ body {
   bottom: 35px;
   left: 50%;
   transform: translateX(-50%);
-
 }
 
 .bottom-centered a{
